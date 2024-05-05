@@ -645,12 +645,21 @@ div#logocontmain {
     justify-content: center;
     align-content: center;
     flex-direction: column;
-    background-image: url('https://erevnarmc.wpcomstaging.com/wp-content/uploads/2024/05/IMG_3727-1212491260-e1714889270392.png');
+    background-image: url('https://erevnarmc.com/wp-content/uploads/2024/05/IMG_3727-1212491260-e1714889270392.png');
     background-repeat: no-repeat;
     background-size: 100% auto;
     background-position: top;
     border-radius: 30px;
+    z-index: -1;
     /* filter: blur(8px); */
     /* -webkit-filter: blur(8px); */
     background-attachment: fixed;
 }
+/*
+@media only screen and (max-width: 600px) {
+    .clgimg {
+        transform: translate3d(0, 0, 0);
+        -webkit-transform: translate3d(0, 0, 0);
+    }
+}
+*/
