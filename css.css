@@ -655,6 +655,7 @@ div#logocontmain {
     /* -webkit-filter: blur(8px); */
     background-attachment: fixed;
 }
+
 /*
 @media only screen and (max-width: 600px) {
     .clgimg {
@@ -663,3 +664,75 @@ div#logocontmain {
     }
 }
 */
+
+
+:root {
+    --white: #fff;
+    --darkbg: #181818;
+    --themegreen: #109A9A;
+    scroll-behavior: smooth;
+}
+
+a.brochurelink {
+    font-size: 2rem;
+    font-weight: bold;
+    display: flex;
+    color: white;
+    text-decoration: none;
+    position: relative;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+a.brochurelink:hover {
+    color: white !important;
+}
+
+.brochurewrapper {
+    margin-bottom: 20px;
+}
+
+.brochurelink span,
+.brochurelink i {
+    position: relative;
+}
+
+.brochurelink i {
+    margin-left: 0.5em;
+}
+
+.rightarrow::before {
+    content: "\2192"
+}
+
+.brochurelink .brochurecolor {
+    width: 2em;
+    height: 2em;
+    border-radius: 2em;
+    background-color: var(--themegreen);
+    position: absolute;
+    top: 50%;
+    transform: translatey(-50%);
+    left: -0.65em;
+}
+
+.postercont {
+    width: 450px;
+    margin-top: 10px;
+}
+@media only screen and (max-width: 600px) {
+    .postercont {
+        width: 100%;
+    }
+}
+
+h2, p {
+    color: white;
+}
+
+p.abouterevna {
+    font-size: large;
+    text-align: center;
+}
