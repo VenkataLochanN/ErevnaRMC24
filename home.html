@@ -125,38 +125,475 @@
 
         <!-- wp:html -->
         <div class="datecont">
-            <h1>July</h1>
-            <div class="datenumbercont">
-                12
+
+            <div style="
+            height: 100px;
+            display: flex;
+            overflow: hidden;
+            flex-direction: column;
+            align-content: center;
+            justify-content: center;
+            align-items: center;">
+                <ul id="idrolllist1" class="rolllist rolltxt" style="text-align: center;">
+                    <li>
+                        <p style="font-size: 30px;">May</p>
+                    </li>
+                    <li>
+                        <p style="font-size: 30px;">June</p>
+                    </li>
+                    <li>
+                        <p style="font-size: 30px;">July</p>
+                    </li>
+                    <li>
+                        <p style="font-size: 30px;">August</p>
+                    </li>
+                    <li>
+                        <p style="font-size: 30px;">September</p>
+                    </li>
+                </ul>
             </div>
+
+            <script>
+                // get the element to animate
+                var element1 = document.getElementById('idrolllist1');
+                var elementHeight = element1.clientHeight;
+
+                // listen for scroll event and call animate function
+                document.addEventListener('scroll', animate1);
+
+                // check if element is in view
+                function inView1() {
+                    // get window height
+                    var windowHeight = window.innerHeight;
+                    // get number of pixels that the document is scrolled
+                    var scrollY = window.scrollY || window.pageYOffset;
+
+                    // get current scroll position (distance from the top of the page to the bottom of the current viewport)
+                    var scrollPosition = scrollY + windowHeight;
+                    // get element position (distance from the top of the page to the bottom of the element)
+                    var elementPosition = element1.getBoundingClientRect().top + scrollY;
+
+                    // is scroll position greater than element position? (is element in view?)
+                    if (scrollPosition > elementPosition) {
+                        return true;
+                    }
+
+                    return false;
+                }
+
+                // animate element when it is in view
+                function animate1() {
+                    // is element in view?
+                    if (inView1()) {
+                        // element is in view, add class to element
+                        element1.classList.add('rolllistanim');
+                    }
+                    else {
+                        element1.classList.remove('rolllistanim');
+                    }
+                }
+
+            </script>
+
             <div class="datenumbercont">
-                13
+                <ul id="idrolllist2" class="rolllist rolltxt">
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                    <li>6</li>
+                    <li>7</li>
+                    <li>8</li>
+                    <li>9</li>
+                    <li>10</li>
+                    <li>11</li>
+                    <li>12</li>
+                    <li>13</li>
+                    <li>14</li>
+                    <li>15</li>
+                    <li>16</li>
+                    <li>17</li>
+                    <li>18</li>
+                    <li>19</li>
+                    <li>20</li>
+                    <li>21</li>
+                    <li>22</li>
+                    <li>23</li>
+                </ul>
             </div>
+
+            <script>
+                // get the element to animate
+                var element2 = document.getElementById('idrolllist2');
+                var elementHeight = element2.clientHeight;
+
+                // listen for scroll event and call animate function
+                document.addEventListener('scroll', animate2);
+
+                // check if element is in view
+                function inView2() {
+                    // get window height
+                    var windowHeight = window.innerHeight;
+                    // get number of pixels that the document is scrolled
+                    var scrollY = window.scrollY || window.pageYOffset;
+
+                    // get current scroll position (distance from the top of the page to the bottom of the current viewport)
+                    var scrollPosition = scrollY + windowHeight;
+                    // get element position (distance from the top of the page to the bottom of the element)
+                    var elementPosition = element2.getBoundingClientRect().top + scrollY;
+
+                    // is scroll position greater than element position? (is element in view?)
+                    if (scrollPosition > elementPosition) {
+                        return true;
+                    }
+
+                    return false;
+                }
+
+                // animate element when it is in view
+                function animate2() {
+                    // is element in view?
+                    if (inView2()) {
+                        // element is in view, add class to element
+                        element2.classList.add('rolllistanim');
+                    }
+                    else {
+                        element2.classList.remove('rolllistanim');
+                    }
+                }
+
+            </script>
+
             <div class="datenumbercont">
-                14
+                <ul id="idrolllist3" class="rolllist rolltxt">
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                    <li>6</li>
+                    <li>7</li>
+                    <li>8</li>
+                    <li>9</li>
+                    <li>10</li>
+                    <li>11</li>
+                    <li>12</li>
+                    <li>13</li>
+                    <li>14</li>
+                    <li>15</li>
+                    <li>16</li>
+                    <li>17</li>
+                    <li>18</li>
+                    <li>19</li>
+                    <li>20</li>
+                    <li>21</li>
+                    <li>22</li>
+                    <li>23</li>
+                    <li>24</li>
+                    <li>25</li>
+                </ul>
             </div>
+
+            <script>
+                // get the element to animate
+                var element3 = document.getElementById('idrolllist3');
+                var elementHeight = element3.clientHeight;
+
+                // listen for scroll event and call animate function
+                document.addEventListener('scroll', animate3);
+
+                // check if element is in view
+                function inView3() {
+                    // get window height
+                    var windowHeight = window.innerHeight;
+                    // get number of pixels that the document is scrolled
+                    var scrollY = window.scrollY || window.pageYOffset;
+
+                    // get current scroll position (distance from the top of the page to the bottom of the current viewport)
+                    var scrollPosition = scrollY + windowHeight;
+                    // get element position (distance from the top of the page to the bottom of the element)
+                    var elementPosition = element3.getBoundingClientRect().top + scrollY;
+
+                    // is scroll position greater than element position? (is element in view?)
+                    if (scrollPosition > elementPosition) {
+                        return true;
+                    }
+
+                    return false;
+                }
+
+                // animate element when it is in view
+                function animate3() {
+                    // is element in view?
+                    if (inView3()) {
+                        // element is in view, add class to element
+                        element3.classList.add('rolllistanim');
+                    }
+                    else {
+                        element3.classList.remove('rolllistanim');
+                    }
+                }
+
+            </script>
+
+            <div class="datenumbercont">
+                <ul id="idrolllist4" class="rolllist rolltxt">
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                    <li>6</li>
+                    <li>7</li>
+                    <li>8</li>
+                    <li>9</li>
+                    <li>10</li>
+                    <li>11</li>
+                    <li>12</li>
+                    <li>13</li>
+                    <li>14</li>
+                    <li>15</li>
+                    <li>16</li>
+                    <li>17</li>
+                    <li>18</li>
+                    <li>19</li>
+                    <li>20</li>
+                    <li>21</li>
+                    <li>22</li>
+                    <li>23</li>
+                    <li>24</li>
+                    <li>25</li>
+                    <li>26</li>
+                    <li>27</li>
+                </ul>
+            </div>
+
+            <script>
+                // get the element to animate
+                var element4 = document.getElementById('idrolllist4');
+                var elementHeight = element4.clientHeight;
+
+                // listen for scroll event and call animate function
+                document.addEventListener('scroll', animate4);
+
+                // check if element is in view
+                function inView4() {
+                    // get window height
+                    var windowHeight = window.innerHeight;
+                    // get number of pixels that the document is scrolled
+                    var scrollY = window.scrollY || window.pageYOffset;
+
+                    // get current scroll position (distance from the top of the page to the bottom of the current viewport)
+                    var scrollPosition = scrollY + windowHeight;
+                    // get element position (distance from the top of the page to the bottom of the element)
+                    var elementPosition = element4.getBoundingClientRect().top + scrollY;
+
+                    // is scroll position greater than element position? (is element in view?)
+                    if (scrollPosition > elementPosition) {
+                        return true;
+                    }
+
+                    return false;
+                }
+
+                // animate element when it is in view
+                function animate4() {
+                    // is element in view?
+                    if (inView4()) {
+                        // element is in view, add class to element
+                        element4.classList.add('rolllistanim');
+                    }
+                    else {
+                        element4.classList.remove('rolllistanim');
+                    }
+                }
+
+            </script>
+
         </div>
+
         <div class="eventcontparent">
             <div class="eventcont">
-                <h1>Workshops</h1>
+                <h2>Workshops</h2>
                 <div class="eventnumbercont box--gradient silver">
-                    21
+                    <ul id="idrolllist5" class="rolllist rolltxt">
+                        <li>15</li>
+                        <li>16</li>
+                        <li>17</li>
+                        <li>18</li>
+                        <li>19</li>
+                        <li>20</li>
+                        <li>21</li>
+                        <li>22</li>
+                        <li>23</li>
+                        <li>24</li>
+                        <li>25</li>
+                        <li>26</li>
+                        <li>27</li>
+                    </ul>
                 </div>
             </div>
 
+            <script>
+                // get the element to animate
+                var element5 = document.getElementById('idrolllist5');
+                var elementHeight = element5.clientHeight;
+
+                // listen for scroll event and call animate function
+                document.addEventListener('scroll', animate5);
+
+                // check if element is in view
+                function inView5() {
+                    // get window height
+                    var windowHeight = window.innerHeight;
+                    // get number of pixels that the document is scrolled
+                    var scrollY = window.scrollY || window.pageYOffset;
+
+                    // get current scroll position (distance from the top of the page to the bottom of the current viewport)
+                    var scrollPosition = scrollY + windowHeight;
+                    // get element position (distance from the top of the page to the bottom of the element)
+                    var elementPosition = element5.getBoundingClientRect().top + scrollY;
+
+                    // is scroll position greater than element position? (is element in view?)
+                    if (scrollPosition > elementPosition) {
+                        return true;
+                    }
+
+                    return false;
+                }
+
+                // animate element when it is in view
+                function animate5() {
+                    // is element in view?
+                    if (inView5()) {
+                        // element is in view, add class to element
+                        element5.classList.add('rolllistanim');
+                    }
+                    else {
+                        element5.classList.remove('rolllistanim');
+                    }
+                }
+
+            </script>
+
             <div class="eventcont">
-                <h1>Competitions</h1>
+                <h2>Competitions</h2>
                 <div class="eventnumbercont box--gradient silver">
-                    5
+                    <ul id="idrolllist6" class="rolllist rolltxt">
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                        <li>5</li>
+                        <li>6</li>
+                        <li>7</li>
+                        <li>8</li>
+                        <li>9</li>
+                    </ul>
                 </div>
             </div>
 
+            <script>
+                // get the element to animate
+                var element6 = document.getElementById('idrolllist6');
+                var elementHeight = element6.clientHeight;
+
+                // listen for scroll event and call animate function
+                document.addEventListener('scroll', animate6);
+
+                // check if element is in view
+                function inView6() {
+                    // get window height
+                    var windowHeight = window.innerHeight;
+                    // get number of pixels that the document is scrolled
+                    var scrollY = window.scrollY || window.pageYOffset;
+
+                    // get current scroll position (distance from the top of the page to the bottom of the current viewport)
+                    var scrollPosition = scrollY + windowHeight;
+                    // get element position (distance from the top of the page to the bottom of the element)
+                    var elementPosition = element6.getBoundingClientRect().top + scrollY;
+
+                    // is scroll position greater than element position? (is element in view?)
+                    if (scrollPosition > elementPosition) {
+                        return true;
+                    }
+
+                    return false;
+                }
+
+                // animate element when it is in view
+                function animate6() {
+                    // is element in view?
+                    if (inView6()) {
+                        // element is in view, add class to element
+                        element6.classList.add('rolllistanim');
+                    }
+                    else {
+                        element6.classList.remove('rolllistanim');
+                    }
+                }
+
+            </script>
+
             <div class="eventcont">
-                <h1>Culturals</h1>
+                <h2>Culturals</h2>
                 <div class="eventnumbercont box--gradient silver">
-                    5
+                    <ul id="idrolllist7" class="rolllist rolltxt">
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                        <li>5</li>
+                        <li>6</li>
+                        <li>7</li>
+                        <li>8</li>
+                        <li>9</li>
+                    </ul>
                 </div>
             </div>
+
+            <script>
+                // get the element to animate
+                var element7 = document.getElementById('idrolllist7');
+                var elementHeight = element7.clientHeight;
+
+                // listen for scroll event and call animate function
+                document.addEventListener('scroll', animate7);
+
+                // check if element is in view
+                function inView7() {
+                    // get window height
+                    var windowHeight = window.innerHeight;
+                    // get number of pixels that the document is scrolled
+                    var scrollY = window.scrollY || window.pageYOffset;
+
+                    // get current scroll position (distance from the top of the page to the bottom of the current viewport)
+                    var scrollPosition = scrollY + windowHeight;
+                    // get element position (distance from the top of the page to the bottom of the element)
+                    var elementPosition = element7.getBoundingClientRect().top + scrollY;
+
+                    // is scroll position greater than element position? (is element in view?)
+                    if (scrollPosition > elementPosition) {
+                        return true;
+                    }
+
+                    return false;
+                }
+
+                // animate element when it is in view
+                function animate7() {
+                    // is element in view?
+                    if (inView7()) {
+                        // element is in view, add class to element
+                        element7.classList.add('rolllistanim');
+                    }
+                    else {
+                        element7.classList.remove('rolllistanim');
+                    }
+                }
+
+            </script>
 
         </div>
 
@@ -202,23 +639,150 @@
         </script>
 
         <div class="postercont">
-            <img src="https://erevnarmc.com/wp-content/uploads/2024/05/IMG_3716.png"
-            alt="Erevna Logo" class="mainposter" style="width:100%;height:auto" />
+            <img src="https://erevnarmc.com/wp-content/uploads/2024/05/IMG_3716.png" alt="Erevna Logo"
+                class="mainposter" style="width:100%;height:auto" />
         </div>
+
+        <h1>What's On?</h1>
+        <div class="whatsoncont">
+
+            <div class="workshopscont">
+                <!-- wp:image {"id":70,"width":"274px","height":"auto","sizeSlug":"large","linkDestination":"none","align":"center"} -->
+                <figure style="min-width: 40%" class="wp-block-image aligncenter size-large is-resized"><img
+                        src="https://erevnarmc.com/wp-content/uploads/2024/05/IMG-20240511-WA0015.jpg" alt="Erevna Logo"
+                        class="wp-image-70" style="width:274px;height:auto" /></figure>
+                <!-- /wp:image -->
+                <div class="textflow workshopstext">
+                    <h3 style="margin: 0px;
+                    color: white;">Workshops</h3>
+                    <p style="text-align: center;">
+                        Experience the thrill of hands-on learning at EREVNA, where students delve into the world of
+                        medicine through immersive workshops. Led by experts, our sessions cover everything from
+                        suturing to diagnostic simulations, empowering participants with practical skills and insights.
+                    </p>
+                    <div style="margin-bottom: 10px;" class="wp-block-button"><a style="border-radius: 30px;"
+                            class="wp-block-button__link wp-element-button" href="#" target="_blank"
+                            rel="noreferrer noopener">Click here to know more</a></div>
+                </div>
+            </div>
+            <div class="competitionscont">
+                <!-- wp:image {"id":70,"width":"274px","height":"auto","sizeSlug":"large","linkDestination":"none","align":"center"} -->
+                <figure style="min-width: 40%" class="wp-block-image aligncenter size-large is-resized"><img
+                        src="https://erevnarmc.com/wp-content/uploads/2024/05/IMG-20240511-WA0023.jpg" alt="Erevna Logo"
+                        class="wp-image-70" style="width:274px;height:auto" /></figure>
+                <!-- /wp:image -->
+                <div class="textflow competitionstext">
+                    <h3 style="margin: 0px;
+                    color: white;">Competitions</h3>
+                    <p style="text-align: center;">
+                        Challenge yourself in case, paper, and poster presentations, showcasing your expertise and
+                        research prowess. Engage in spirited debates and quizzes honing your critical thinking and
+                        communication skills while shaping the future of healthcare discourse.
+                    </p>
+                    <div style="margin-bottom: 10px;" class="wp-block-button"><a style="border-radius: 30px;"
+                            class="wp-block-button__link wp-element-button" href="#" target="_blank"
+                            rel="noreferrer noopener">Click here to know more</a></div>
+                </div>
+            </div>
+            <div class="culturalscont">
+                <!-- wp:image {"id":70,"width":"274px","height":"auto","sizeSlug":"large","linkDestination":"none","align":"center"} -->
+                <figure style="min-width: 40%" class="wp-block-image aligncenter size-large is-resized"><img
+                        src="https://erevnarmc.com/wp-content/uploads/2024/05/IMG-20240511-WA0019.jpg" alt="Erevna Logo"
+                        class="wp-image-70" style="width:274px;height:auto" /></figure>
+                <!-- /wp:image -->
+                <div class="textflow culturalstext">
+                    <h3 style="margin: 0px;
+                    color: white;">Culturals</h3>
+                    <p style="text-align: center;">
+                        Get ready to dance the night away at EREVNA!! Immerse yourself in mesmerizing moves as we groove
+                        to the rhythm of the night.
+                    </p>
+                    <div style="margin-bottom: 10px;" class="wp-block-button"><a style="border-radius: 30px;"
+                            class="wp-block-button__link wp-element-button" href="#" target="_blank"
+                            rel="noreferrer noopener">Click here to know more</a></div>
+                </div>
+            </div>
+
+        </div>
+        <h2>Faculty Core Committee:</h2>
+        <div class="facultycorecommitteediv">
+            <div class="personcont">
+                <!-- wp:image {"id":70,"width":"274px","height":"auto","sizeSlug":"large","linkDestination":"none","align":"center"} -->
+                <figure style="min-width: 40%" class="wp-block-image aligncenter size-large is-resized"><img
+                        src="https://erevnarmc.com/wp-content/uploads/2024/05/IMG_3963.jpg" alt="Erevna Logo"
+                        class="wp-image-70" style="width: 274px; height: 274px; object-fit: cover;" /></figure>
+                <!-- /wp:image -->
+                <div class="namecont">
+                    Dr. DSVL Narasimham
+                </div>
+                <div class="desigcont">
+                    DME, (FAC); <br>
+                    Principal and Additional Director<br>RMC kakinada
+                </div>
+            </div>
+            <div class="personcont">
+                <!-- wp:image {"id":70,"width":"274px","height":"auto","sizeSlug":"large","linkDestination":"none","align":"center"} -->
+                <figure style="min-width: 40%" class="wp-block-image aligncenter size-large is-resized"><img
+                        src="https://erevnarmc.com/wp-content/uploads/2024/05/IMG_3964.jpg" alt="Erevna Logo"
+                        class="wp-image-70" style="width: 274px; height: 274px; object-fit: cover;" /></figure>
+                <!-- /wp:image -->
+                <div class="namecont">
+                    Dr. B Devi Madhavi
+                </div>
+                <div class="desigcont">
+                    Prof & HOD Community Medicine<br>Vice Principal (Academic)<br>RMC Kakinada
+                </div>
+            </div>
+            <div class="personcont">
+                <!-- wp:image {"id":70,"width":"274px","height":"auto","sizeSlug":"large","linkDestination":"none","align":"center"} -->
+                <figure style="min-width: 40%" class="wp-block-image aligncenter size-large is-resized"><img
+                        src="https://erevnarmc.com/wp-content/uploads/2024/05/IMG_3966.jpg" alt="Erevna Logo"
+                        class="wp-image-70" style="width: 274px; height: 274px; object-fit: cover;" /></figure>
+                <!-- /wp:image -->
+                <div class="namecont">
+                    Dr. A Vishnu Vardhan
+                </div>
+                <div class="desigcont">
+                    Prof & HOD Anesthesiology<br>Vice Principal (Administration)<br>RMC Kakinada
+                </div>
+            </div>
+            <div class="personcont">
+                <!-- wp:image {"id":70,"width":"274px","height":"auto","sizeSlug":"large","linkDestination":"none","align":"center"} -->
+                <figure style="min-width: 40%" class="wp-block-image aligncenter size-large is-resized"><img
+                        src="https://erevnarmc.com/wp-content/uploads/2024/05/IMG_3967.jpg" alt="Erevna Logo"
+                        class="wp-image-70" style="width: 274px; height: 274px; object-fit: cover;" /></figure>
+                <!-- /wp:image -->
+                <div class="namecont">
+                    Dr. S Lavanya Kumari
+                </div>
+                <div class="desigcont">
+                    Superintendent<br>GGH Kakinada
+                </div>
+            </div>
+        </div>
+
+        <!-- <p class="abouterevna">
+            Under Construction
+        </p> -->
 
         <h2>About Erevna:</h2>
         <p class="abouterevna">
             Greetings esteemed colleagues,<br><br>
-            
-            Rangaraya Medical College proudly presents EREVNA 3.0, the pinnacle of academic excellence and professional advancement
-            in the medical realm. Building upon the resounding success of its predecessor, EREVNA 3.0 promises an unparalleled
+
+            Rangaraya Medical College proudly presents EREVNA 3.0, the pinnacle of academic excellence and professional
+            advancement
+            in the medical realm. Building upon the resounding success of its predecessor, EREVNA 3.0 promises an
+            unparalleled
             experience marked by cutting-edge workshops, stimulating competitions and extravaganza culturals.
             <br><br>
-            Prepare to immerse yourselves in a symphony of knowledge and innovation as we delve into uncharted territories of
-            medical expertise. Engage with esteemed professionals, exchange insights, and forge enduring alliances with peers
+            Prepare to immerse yourselves in a symphony of knowledge and innovation as we delve into uncharted
+            territories of
+            medical expertise. Engage with esteemed professionals, exchange insights, and forge enduring alliances with
+            peers
             hailing from diverse backgrounds across the nation.
             <br><br>
-            Join us as we embark on a journey to elevate our collective medical acumen to unprecedented heights. EREVNA 3.0 awaits,
+            Join us as we embark on a journey to elevate our collective medical acumen to unprecedented heights. EREVNA
+            3.0 awaits,
             poised to empower and inspire the next generation of medical luminaries.
         </p>
 

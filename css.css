@@ -111,6 +111,7 @@ header .wp-block-navigation :where(.wp-block-navigation__submenu-container) a {
 /* Header */
 .site-header {
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    position: static;
 }
 
 /*Transparent Header */
@@ -503,6 +504,7 @@ a:hover {
 .datecont {
     display: flex;
     flex-direction: row;
+    margin-top: 50px;
     width: 100vw;
     align-content: center;
     justify-content: center;
@@ -513,6 +515,12 @@ a:hover {
     color: white;
     font-size: 30px;
     font-weight: bold;
+    height: 50px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
     background-color: #181818;
     margin-left: 20px;
     padding: 20px;
@@ -611,7 +619,9 @@ a:hover {
 
 .eventnumbercont {
     color: #181818;
-    font-size: 30px;
+    height: 50px;
+    overflow: hidden;
+    font-size: 2rem;
     font-weight: bold;
     display: flex;
     /* margin-left: 20px; */
@@ -735,4 +745,135 @@ h2, p {
 p.abouterevna {
     font-size: large;
     text-align: center;
+}
+
+.rolllist {
+    list-style-type: none;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    transform: translateY(50%);
+    padding: 0;
+}
+
+.rolllistanim {
+    animation-duration: 3s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    animation-name: roll;
+}
+
+/*Roll Animation*/
+@keyframes roll {
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.whatsoncont {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.workshopscont {
+    display: flex;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.competitionscont {
+    display: flex;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row-reverse;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.culturalscont {
+    display: flex;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+@media only screen and (max-width: 782px) {
+    .workshopscont {
+        flex-direction: column;
+    }
+    .competitionscont {
+        flex-direction: column;
+    }
+    .culturalscont {
+        flex-direction: column;
+    }
+}
+
+.textflow {
+    margin: 10px;
+    padding: 10px;
+    background-color: #181818cf;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.personcont {
+    background-color: #181818cf;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 20px;
+    align-content: center;
+    align-items: center;
+    width: 274px;
+}
+
+.namecont {
+    color: #eee;
+}
+
+.desigcont {
+    color: #ffffff7d;
+    text-align: center;
+}
+
+.facultycorecommitteediv {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.teamcont {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+h3 {
+    color: white;
+}
+
+.teamnamecont {
+    color: #eee;
+    margin-bottom: 10px;
 }
