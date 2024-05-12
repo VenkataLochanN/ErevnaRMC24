@@ -877,3 +877,21 @@ h3 {
     color: #eee;
     margin-bottom: 10px;
 }
+
+.teamgrouppic {
+    height: 500px;
+    width: 100%;
+    object-fit: cover;
+}
+
+@media only screen and (max-width: 782px) {
+    .teamgrouppic {
+        height: 200px;
+    }
+}
+
+.teamtext {
+    text-align: center;
+    color: white;
+
+}
