@@ -895,3 +895,86 @@ h3 {
     color: white;
 
 }
+
+.workshopcontainer {
+    border-radius: 30px;
+    padding: 20px;
+    transition: all 0.5s ease-in-out;
+    margin: 20px;
+}
+
+.workshopdetailspshort {
+    text-align: center;
+    color: #ffffff7d;
+}
+
+#plasticsurgeryworkshopcont {
+    background-color: #181818cf;
+}
+
+#plasticsurgeryworkshopcont:hover {
+    background-color: #000;
+}
+
+#commedworkshopcont {
+    background-color: #181818cf;
+}
+
+#commedworkshopcont:hover {
+    background-color: #000;
+}
+
+#anaestworkshopcont {
+    background-color: #181818cf;
+}
+
+#anaestworkshopcont:hover {
+    background-color: #000;
+}
+
+#opthalworkshopcont {
+    background-color: #181818cf;
+}
+
+#opthalworkshopcont:hover {
+    background-color: #000;
+}
+
+#pedsworkshopcont {
+    background-color: #181818cf;
+}
+
+#pedsworkshopcont:hover {
+    background-color: #000;
+}
+
+#pulmedworkshopcont {
+    background-color: #181818cf;
+}
+
+#pulmedworkshopcont:hover {
+    background-color: #000;
+}
+
+#pathworkshopcont {
+    background-color: #181818cf;
+}
+
+#pathworkshopcont:hover {
+    background-color: #000;
+}
+
+.roundedbackground {
+    background-color: #181818cf;
+    border-radius: 30px;
+    margin: 20px;
+    padding: 20px;
+}
+
+.widthfitcontent {
+    width: fit-content;
+}
+
+h4 {
+    color: #eee;
+}
