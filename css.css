@@ -680,6 +680,7 @@ div#logocontmain {
     --white: #fff;
     --darkbg: #181818;
     --themegreen: #109A9A;
+    --themebg: #1f3037;
     scroll-behavior: smooth;
 }
 
