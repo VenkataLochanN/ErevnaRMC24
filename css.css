@@ -989,6 +989,13 @@ h3 {
     background-color: #000;
 }
 
+#obgworkshopcont {
+    background-color: #181818cf;
+}
+
+#obgworkshopcont:hover {
+    background-color: #000;
+}
 
 .roundedbackground {
     background-color: #181818cf;
